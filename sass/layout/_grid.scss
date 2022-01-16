@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 15vw 1fr 8rem;
 }
-@media screen and(max-width: 500px) {
+@media screen and(max-width: 830px) {
   .wrapper {
     grid-template-columns: 5vw 1fr 5vw;
   }
@@ -19,13 +19,13 @@
   grid-auto-flow: row dense;
   grid-gap: 2rem;
 }
+@media screen and(min-width: 1000px) and (max-width: 1200px) {
+  .main__cards {
+    grid-template-columns: repeat(auto-fill, minmax(30rem, min-content));
+  }
+}
 @media screen and(min-width: 1700px) {
   .container {
     max-width: 1600px;
-  }
-}
-@media screen and(min-width: 1000px) and (max-width: 1200px) {
-  .main__cards {
-    grid-template-columns: repeat(auto, min-content);
   }
 }
