@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav__open">
+          <img src="images/icons/icon-arrow-left.svg" alt="" />
+        </div>
+        <div class="nav__logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <ul class="nav__links">
+          <a href="" class="nav__links--item">
+            <li>
+              <img src="images/icons/icon-dashboard.svg" alt="" />
+              Dashboard
+            </li>
+          </a>
+          <a href="" class="nav__links--item">
+            <li>
+              <img src="images/icons/icon-case.svg" alt="" />
+              My portfolio
+            </li>
+          </a>
+          <a href="" class="nav__links--item">
+            <li class="active">
+              <img src="images/icons/icon-graph.svg" alt="" />
+              My new Opportunities
+            </li>
+          </a>
+          <a href="" class="nav__links--item">
+            <li>
+              <img src="images/icons/Combined Shape.svg" alt="" />
+              Past Investments
+            </li>
+          </a>
+          <a href="" class="nav__links--item">
+            <li>
+              <div class="notification"></div>
+              <img src="images/icons/icon-download.svg" alt="" />
+              Documents
+            </li>
+          </a>
+          <a href="" class="nav__links--item">
+            <li>
+              <div class="notification"></div>
+              <img src="images/icons/icon-envelope.svg" alt="" />
+              Messages
+            </li>
+          </a>
+          <a href="" class="nav__links--item">
+            <li>
+              <img src="images/icons/icon-book.svg" alt="" />
+              News
+            </li>
+          </a>
+        </ul>
+      </nav>
+      <div class="container main-content">
+        <header class="header">
+          <div class="header__search-bar">
+            <img src="images/icons/icon-search.svg" alt="" />
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="header__users">
+            <div class="header__users--dropdown">
+              <button
+                class="dropdown__btn btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="images/Avatar.jpg" alt="" />
+                Jean Jimenez
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <h1 class="main__title">My New Opportunities</h1>
+          <div class="main__dropdowns container">
+            <div class="main__dropdowns--text">
+              <button
+                class="dropdown__btn btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Status: All
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+              <button
+                class="dropdown__btn btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Type: All
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+              <button
+                class="dropdown__btn btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Category: All
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <div class="main__dropdowns--icon">
+              <button
+                class="dropdown__btn btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="images/Card View.svg" alt="" />
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+          <div class="main__num">
+            <span>5 projects</span>
+          </div>
+          <!-- cards -->
+          <div class="main__cards">
+            <div class="card">
+              <div class="card__img">
+                <div class="card__img--label">
+                  <span class="free">Open for investment</span>
+                </div>
+                <img src="images/img1.jpg" alt="villa Doria" />
+              </div>
+              <h3 class="card__title">Villa Doria</h3>
+              <span class="card__subtitle"> Private equiity </span>
+              <div class="card__info">
+                <div class="card__info--value">
+                  <h4>€94,650</h4>
+                  <span>Invested Value</span>
+                </div>
+                <div class="card__info--value">
+                  <h4>4 years</h4>
+                  <span>Term</span>
+                </div>
+                <div class="card__info--value">
+                  <h4>13%</h4>
+                  <span>Expected IRR</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <div class="card__img--label">
+                  <span class="free">Open for Investment</span>
+                </div>
+                <img src="images/img2.jpg" alt="villa Doria" />
+              </div>
+              <h3 class="card__title">Casa Folimanka</h3>
+              <span class="card__subtitle"> Private equiity </span>
+              <div class="card__info">
+                <div class="card__info--value">
+                  <h4>€94,650</h4>
+                  <span>Invested Value</span>
+                </div>
+                <div class="card__info--value">
+                  <h4>4 years</h4>
+                  <span>Term</span>
+                </div>
+                <div class="card__info--value">
+                  <h4>13%</h4>
+                  <span>Expected IRR</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <div class="card__img--label">
+                  <span class="free">Open for investment</span>
+                </div>
+                <img src="images/img3.jpg" alt="villa Doria" />
+              </div>
+              <h3 class="card__title">Czech Capital RE Fund Sicav</h3>
+              <span class="card__subtitle"> Private equiity </span>
+              <div class="card__info">
+                <div class="card__info--value">
+                  <h4>€94,650</h4>
+                  <span>Invested Value</span>
+                </div>
+                <div class="card__info--value">
+                  <h4>4 years</h4>
+                  <span>Term</span>
+                </div>
+                <div class="card__info--value">
+                  <h4>13%</h4>
+                  <span>Expected IRR</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <div class="card__img--label">
+                  <span class="danger">Preparation</span>
+                </div>
+                <img src="images/img1.jpg" alt="villa Doria" />
+              </div>
+              <h3 class="card__title">Heřmanova 22</h3>
+              <span class="card__subtitle"> Private equiity </span>
+              <div class="card__info">
+                <div class="card__info--value">
+                  <h4>€94,650</h4>
+                  <span>Invested Value</span>
+                </div>
+                <div class="card__info--value">
+                  <h4>4 years</h4>
+                  <span>Term</span>
+                </div>
+                <div class="card__info--value">
+                  <h4>13%</h4>
+                  <span>Expected IRR</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <div class="card__img--label">
+                  <span class="danger">Preparation</span>
+                </div>
+                <img src="images/img2.jpg" alt="villa Doria" />
+              </div>
+              <h3 class="card__title">Casa Folimanka</h3>
+              <span class="card__subtitle"> Private equiity </span>
+              <div class="card__info">
+                <div class="card__info--value">
+                  <h4>€94,650</h4>
+                  <span>Invested Value</span>
+                </div>
+                <div class="card__info--value">
+                  <h4>4 years</h4>
+                  <span>Term</span>
+                </div>
+                <div class="card__info--value">
+                  <h4>13%</h4>
+                  <span>Expected IRR</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="login">
+        <div class="login__open">
+          <img src="images/icons/icon-arrow-left-2.svg" alt="" />
+        </div>
+        <div class="login__user">
+          <img src="images/vatar.jpg" alt="user1" />
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
