@@ -34,43 +34,48 @@
       flex-direction: column;
       gap: 3rem;
       text-decoration: none;
-      color: $--cl-primary;
+      position: relative;
+      margin-bottom: $--mg-sm;
       &:hover {
         color: $--cl-primary;
       }
 
-      li {
+      &.active {
+        width: 100%;
+        height: 100;
+        background-color: $--cl-background;
+        border-radius: 1.2rem 0 0 1.2rem;
+        opacity: 1;
+        & > a {
+          color: $--cl-secondary;
+          opacity: 1;
+        }
+      }
+      .notification {
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: $--cl-primary;
+      }
+
+      a {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 1.8rem;
-        margin-bottom: $--mg-sm;
         font-size: 1.3rem;
-        opacity: 0.65;
         padding: 1.5rem 0;
         padding-left: 1rem;
-        position: relative;
         transition: all 0.3s ease;
+        text-decoration: none;
+        color: $--cl-primary;
+        opacity: 0.65;
+
         &:hover {
           opacity: 1;
-        }
-
-        .notification {
-          position: absolute;
-          top: -1rem;
-          right: 3rem;
-          width: 0.5rem;
-          height: 0.5rem;
-          border-radius: 50%;
-          background: $--cl-primary;
-        }
-        &.active {
-          width: 100%;
-          height: 100;
-          background-color: $--cl-background;
-          border-radius: 1.2rem 0 0 1.2rem;
-          opacity: 1;
-          color: $--cl-title;
         }
       }
     }
